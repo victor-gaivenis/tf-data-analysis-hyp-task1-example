@@ -15,5 +15,4 @@ def solution(x_success: int,
     count = np.array([x_success, y_success])
     nobs = np.array([x_cnt, y_cnt]) 
     zstat, pvalue = proposotions_ztest(count = count, nobs = nobs, alternative='larger')
-    return pvalue < alpha
     return pvalue < alpha # Ваш ответ, True или False
